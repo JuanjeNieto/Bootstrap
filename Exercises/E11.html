@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex, follow">
+  <title>Ejercicio 11</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container mt-5">
+  <ul class="nav nav-tabs" id="misPestañas">
+    <li class="nav-item">
+      <a class="nav-link activa" id="pestañaInicio" data-toggle="tab" href="#contenidoInicio" role="tab" aria-controls="inicio"
+         aria-selected="true">Inicio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pestañaPerfil" data-toggle="tab" href="#contenidoPerfil" role="tab"
+         aria-controls="perfil" aria-selected="false">Perfil</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pestañaContacto" data-toggle="tab" href="#contenidoContacto" role="tab"
+         aria-controls="contacto" aria-selected="false">Contacto</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="misContenidos">
+    <div class="tab-pane fade show activa" id="contenidoInicio" role="tabpanel" aria-labelledby="pestañaInicio">
+      <strong>Contenido de Inicio</strong>
+    </div>
+    <div class="tab-pane fade" id="contenidoPerfil" role="tabpanel" aria-labelledby="pestañaPerfil">
+      <strong>Contenido de Perfil</strong>
+    </div>
+    <div class="tab-pane fade" id="contenidoContacto" role="tabpanel" aria-labelledby="pestañaContacto">
+      <strong>Contenido de Contacto</strong>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
