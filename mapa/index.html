@@ -6,16 +6,37 @@
     <title>Interactive Map</title>
     <style>
         #map {
-            height: 400px;
+            height: 800px;
             width: 100%;
+            display: flex;
         }
     </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 </head>
 <body>
     <div id="map"></div>
-    <script src="script.js"></script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script>
+        // Initialize Leaflet
+        var map = L.map('map').setView([36.69691909204672, -6.1614746666936915], 13);
+
+        // base map
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Adding markers to the map
+        var marker = L.marker([36.69691909204672, -6.1614746666936915]).addTo(map);
+        marker.bindPopup("<b>Cumple de Luismi</b><br>Yayyyyyy!").openPopup();
+
+        var albondigas = L.marker([36.697082897888954, -6.161831060859947]).addTo(map);
+        albondigas.bindPopup("<b>Armóndigas</b><br>y paibons jiji").openPopup(); 
+
+        var paibons = L.marker([36.52941650009894, -6.173772495826876]).addTo(map);
+        paibons.bindPopup("<b>El origen de las paibon</b><br>joder kike").openPopup(); 
+
+        var erChapin = L.marker([36.69061598633682, -6.117019718471932]).addTo(map);
+        erChapin.bindPopup("<b>Chapín</b><br>Complejo deportivo").openPopup(); 
     </script>
 </body>
 </html>
