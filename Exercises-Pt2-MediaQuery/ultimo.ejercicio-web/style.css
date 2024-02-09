@@ -1,0 +1,12 @@
+
+    
+        .img-container {
+            height: 200px;
+            overflow: hidden; 
+        }
+
+        .img-container img {
+            width: 90%;
+            height: auto; /* Permite que la imagen se ajuste proporcionalmente a la altura fijada */
+        }
+   

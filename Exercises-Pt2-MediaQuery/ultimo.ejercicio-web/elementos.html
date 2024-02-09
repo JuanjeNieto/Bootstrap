@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos</title>
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="images/Garrison_Logo.webp" width="40" height="50" class="d-inline-block align-top" alt="Logo"> 
+        </a>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <form class="form-inline ml-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="elementos.html">Elementos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="formulario.html">Únete</a>
+                </li>
+            </ul>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <div class="row mt-5" id="hij1">
+        <div class="col-md-4">
+            <h2><strong>Maria</strong></h2>
+            <p >Maria es la primera hija de Ymir</p>
+        </div>
+    </div>
+
+    <!-- Desplegable -->
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <h2>Elije con este desplegable</h2>
+            <h4>Cada una da una información distinta!</h4>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Opciones
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#hij1"><i class="fas fa-rocket"></i></a>
+                    <a class="dropdown-item" href="#hij2"><i class="fas fa-heart"></i></a>
+                    <a class="dropdown-item" href="#hij3"><i class="fas fa-star"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="row mt-5" id="hij2">
+        <div class="col-md-4">
+            <h2><strong>Rose</strong></h2>
+            <p>Rose es la segunda hija de Ymir</p>
+        </div>
+    </div>
+    
+
+    <!-- Tabla responsive con bordes y de tipo striped -->
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <h2>Personajes que rompieron muros</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Edad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Reiner</td>
+                            <td>Brown</td>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Berthold</td>
+                            <td>Hoover</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Eren</td>
+                            <td>Jeager</td>
+                            <td>21</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-5" id="hij3">
+    <div class="col-md-4">
+        <h2><strong>Sina</strong></h2>
+        <p >Sina, que da nombre al tercer muro, es la tercera hija de Ymir</p>      
+    </div>
+</div>
+
+<footer class="footer mt-auto py-3 bg-dark text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Créditos varios</h5>
+                <ul class="list-unstyled">
+                    <li>Hajime Isayama</li>
+                    <li>Gege Akatami</li>
+                    <li>Takehiro Tomiyasu</li>
+                    <li>Kentaro Miura</li>
+                    <li>Eiichiro Oda</li>
+                    <li>Karou Mitoma</li>
+                    <li>Eren Jäeger</li>
+                    <li>Sven Ülrich</li>
+                    <li>Samuel L. Jackson</li>
+                    <li>Daniel Guerrero Silva</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h5>Contacto</h5>
+                <address>
+                    <strong>Gojo Satoru Facilities</strong><br>
+                    Shibuya St, 34<br>
+                    Japón, Tokyo<br>
+                    <abbr title="Teléfono">Tel:</abbr> (123) 456-7890
+                </address>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
