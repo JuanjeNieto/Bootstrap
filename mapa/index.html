@@ -6,7 +6,7 @@
     <title>Interactive Map</title>
     <style>
         #map {
-            height: 800px;
+            height: 900px;
             width: 100%;
             display: flex;
         }
@@ -36,7 +36,10 @@
         paibons.bindPopup("<b>El origen de las paibon</b><br>joder kike").openPopup(); 
 
         var erChapin = L.marker([36.69061598633682, -6.117019718471932]).addTo(map);
-        erChapin.bindPopup("<b>Chapín</b><br>Complejo deportivo").openPopup(); 
+        erChapin.bindPopup("<b>Chapín</b><br>Complejo deportivo").openPopup();
+        
+        var romero = L.marker([36.67183128242379, -6.129842685829163]).addTo(map);
+        romero.bindPopup("<b>IES Romero Vargas</b><br>sacadme de aqui").openPopup();
     </script>
 </body>
 </html>
