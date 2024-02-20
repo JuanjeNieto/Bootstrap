@@ -92,10 +92,11 @@ h1 {
   color: white;
 }
 
-/* Seccion Hero */
+/* Seccionhero personal*/
 
 .hero {
   background-color: #f5f6f7;
+  background: linear-gradient(180deg, #f5f6f7 0%,#f5f6f7 80%, #002861 100%);
   min-height: 450px;
   text-align: center;
 }
@@ -115,6 +116,11 @@ h1 {
   color: #4a7179;
 }
 
+.hero-inferior-imagen{
+  opacity: 60%;
+  border-radius: 20PX;
+}
+
 /* Sobre mi */
 
 .sobre-mi {
@@ -130,12 +136,25 @@ h1 {
 /* Experiencia */
 
 .experiencia {
+
+  border-top: dashed #002861 4px;
   padding: 40px 40px 60px 40px;
+  border-top: blur;
+  
 }
 
+.experiencia .row {
+  display: flex;
+  justify-content: space-between; /* Distribuye el espacio entre las columnas */
+  flex-wrap: wrap; /* Permite que las columnas se envuelvan cuando no hay suficiente espacio */
+  margin: -2px; /* Compensar el margen negativo de las columnas */
+}
 .experiencia .columna {
+  flex: 1 1 calc(33.33% - 4px); /* Ajusta el ancho de las columnas y considera el margen */
+  margin: 2px;
   padding: 20px;
-  border: 2px solid #8080804d;
+  border: 3px solid #491d1df3;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -150,10 +169,22 @@ h1 {
 
 .experiencia i {
   font-size: 2.5rem;
-  color: #7ade30;
+  
   background-color: #0a0a23;
   padding: 8px 19px;
   border-radius: 50%;
+}
+
+.js{
+  color: #f2f529;
+}
+
+.db{
+  color: rgb(165, 15, 15);
+}
+
+.aws{
+  color: rgb(20, 230, 230);
 }
 
 .experiencia-titulo {
@@ -281,58 +312,6 @@ h1 {
 .testimonio-info .cargo {
   font-size: 0.9rem;
   color: #656060;
-}
-
-/* Contacto */
-
-.contacto .container {
-  max-width: 1100px;
-  min-height: 200px;
-  padding: 20px;
-}
-
-.contacto .rectangulo {
-  margin-top: -5rem;
-  background-color: rgb(13, 110, 253);
-  border-radius: 10px;
-  box-shadow: 0px 1px 4px 1px white;
-}
-
-.contacto .row {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.contacto .descripcion {
-  color: white;
-  font-size: 1.2rem;
-}
-
-.contacto button {
-  color: white;
-  font-weight: bold;
-  background-color: transparent;
-  border: 2px solid white;
-  padding: 1.25em 2em;
-  margin: 10px;
-  border-radius: 100px;
-  transition: all 0.2s ease-in-out;
-}
-
-.contacto button:hover {
-  background-color: white;
-  color: black;
-}
-
-.contacto button i {
-  color: white;
-  font-size: 1.3rem;
-  transition: all 0.2s ease-in-out;
-}
-
-.contacto button:hover i {
-  color: black;
 }
 
 /* Pie de pagina (footer) */
